@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Website</title>
+    <link rel="stylesheet" href="styleIplResults.css">
+</head>
+<body>
+    <header id="home">
+        <ul>
+            <li><a href="index.html">home</a></li>
+            <li><a href="timeline.html">timeline</a></li>
+            <li><a href="iplResults.html">more info</a></li>
+        </ul>
+    </header>
+    <section>
+        <div class="head">
+            <h2>Want to know top ranks of IPL from given year?</h2>
+        </div>
+        <div class="options">
+            <form id="testForm">
+                <h2>Please select a Year</h2>
+                <select id="year" name="year">
+                    <option disabled="disabled" required selected="selected">Year</option>
+                    <option>2008</option>
+                    <option>2009</option>
+                    <option>2010</option>
+                    <option>2011</option>
+                    <option>2012</option>
+                    <option>2013</option>
+                    <option>2014</option>
+                    <option>2015</option>
+                    <option>2016</option>
+                    <option>2017</option>
+                    <option>2018</option>
+                    <option>2019</option>
+                    <option>2020</option>
+                </select>
+                <input type="submit" value="submit">
+            </form>
+            <h3 style="color:white"><span id="result1"></span></h3>
+            <h3 style="color:white"><span id="result2"></span></h3>
+            <h3 style="color:white"><span id="result3"></span></h3>
+            <h3 style="color:white"><span id="result4"></span></h3>
+            <h3 style="color:white"><span id="result5"></span></h3>
+        </div>
+    </section>
+    <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-analytics.js"></script>
+    <script src="scriptIplResults.js"></script>
+</body>
+</html>
