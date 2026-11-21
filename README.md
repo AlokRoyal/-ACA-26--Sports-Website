@@ -1,23 +1,45 @@
 # MS Dhoni Tribute Website
 
-A static tribute to Mahendra Singh Dhoni with three connected pages: a biography and achievements page, a career timeline, and an IPL results page.
+![HTML](https://img.shields.io/badge/HTML5-pages-E34F26?logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS3-styling-1572B6?logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-vanilla-F7DF1E?logo=javascript&logoColor=black)
 
-## Pages
+A static tribute to Mahendra Singh Dhoni with three connected pages: biography and achievements, career timeline, and IPL results.
 
-1. Home page: hero, biography, and achievements.
-2. Timeline page: a dedicated career timeline.
-3. IPL results page: results content with its own styles and JavaScript.
+## Features
 
-HTML provides page structure; CSS and JavaScript are in companion files. There is no framework, server component, or package installation step.
+- Home page introduces Dhoni and presents biography and selected achievements
+- Timeline and IPL results are separate pages
+- Each page can use dedicated styles and JavaScript
+- Local images keep the site self-contained
 
-## Technology
+## How it works
 
-HTML5, CSS3, vanilla JavaScript, and local JPG image assets.
+The site is a collection of linked HTML documents. The browser loads index.html first, then follows links to timeline.html or iplResults.html. CSS controls each page’s presentation, while JavaScript provides the small interactions included in the project.
 
-## Run locally
+## Architecture
 
-Open index.html in a browser. The site navigation links to the other pages. For static hosting, publish the pages and assets together while preserving relative paths and exact filenames.
+Browser → index.html → linked timeline/results pages → CSS/JS and local JPG assets
 
-## Project files
+There is no application framework, backend, or remote content service.
 
-style.css styles the home page; styletimeline.css styles the timeline; styleIplResults.css styles the results page. script.js and scriptIplResults.js provide interactions. No build or test commands are configured.
+## Start locally
+
+1. Download or clone the repository.
+2. Preserve the HTML, CSS, JavaScript, and image files in their relative locations.
+3. Open index.html in a browser and navigate between pages.
+
+No package installation or build command is necessary. Static hosting is sufficient.
+
+## Project layout
+
+- index.html — home page, biography, achievements
+- timeline.html — career timeline
+- iplResults.html — IPL results
+- style.css, styletimeline.css, styleIplResults.css — page styling
+- script.js, scriptIplResults.js — page interactions
+- JPG files — backgrounds and cricket imagery
+
+## Notes
+
+Image filenames and relative paths must remain unchanged, especially on case-sensitive hosts. No tests or build scripts are configured. The repository does not list a license file; verify rights for included images before reuse.
